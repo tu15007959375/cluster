@@ -1,0 +1,16 @@
+2023-09-14T16:48:03.7707137+08:00 [WRN]
+FastGithub.HttpServer.CaCertInstallerOfLinuxDebian
+无法自动安装CA证书cacert/fastgithub.crt：没有root权限
+
+2023-09-14T16:48:04.1516842+08:00 [INF]
+FastGithub.HttpServer
+已监听http://localhost:38457，http代理服务启动完成
+
+2023-09-14T16:48:04.3255945+08:00 [INF]
+FastGithub.AppHostedService
+FastGithub启动完成，当前版本为v2.1.4，访问 https://github.com/dotnetcore/fastgithub 关注新版本
+
+2023-09-14T16:48:05.3524113+08:00 [WRN]
+FastGithub.AppHostedService
+请设置系统自动代理为http://127.0.0.1:38457，或手动代理http/https为127.0.0.1:38457
+

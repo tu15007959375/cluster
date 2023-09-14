@@ -737,7 +737,7 @@ void gpu_test_bdia(struct COOElement* coo_elements,int m,int ne,int timing_itera
         // cout<<it.second.size();
         // cout<<endl;
     }
-    //x测试
+    //share memory
     int xtestcount = 0;
     int xmin = INT_MAX;
     int xmax = INT_MIN;
@@ -751,7 +751,7 @@ void gpu_test_bdia(struct COOElement* coo_elements,int m,int ne,int timing_itera
             xmax = diaoffsetvec[i].back();
         xtestcount++;
         // printf("xtestcount:%d\n",xtestcount);
-        if(xtestcount==2)
+        if(xtestcount==1024)
         {
             if(xmin<allmin)
                 allmin = xmin;
@@ -763,7 +763,7 @@ void gpu_test_bdia(struct COOElement* coo_elements,int m,int ne,int timing_itera
         }
     }
     printf("allmin:%d,allmax:%d\n",allmin,allmax);
-    //测试结束
+    //share memory
     int pertile_min_len=0;
     int pertile_max_len=0;
     rowbeginvec.emplace_back(0);
