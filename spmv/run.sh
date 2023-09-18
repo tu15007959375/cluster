@@ -1,5 +1,5 @@
 #！/bin/bash
-matirxpath="/home/tujinxing"
+matirxpath="/home/tujinxing/matrixdata"
 dev=4
 #light spmv
 if [ $1 = 'light' ]

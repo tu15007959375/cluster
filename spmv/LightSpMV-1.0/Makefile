@@ -21,7 +21,7 @@ endif
 #compiling parameters
 CXX = nvcc
 NVCC = nvcc
-NVCCFLAGS = --cudart static -O3 -I. -I $(src_dir) $(GPU_ARCH_FLAGS) -rdc true --ptxas-options=-v -Xcompiler -funroll-loops -Xcompiler -Wall $(MACROS) -ccbin /home/tujinxing/gcc-7.5.0/bin
+NVCCFLAGS = --cudart static -O3 -I. -I $(src_dir) $(GPU_ARCH_FLAGS) -rdc true --ptxas-options=-v -Xcompiler -funroll-loops -Xcompiler -Wall $(MACROS) #-ccbin /home/tujinxing/gcc-7.5.0/bin
 # NVCCFLAGS = --cudart static -O3 -I. -I $(src_dir) $(GPU_ARCH_FLAGS) -rdc true -Xcompiler -funroll-loops -Xcompiler -Wall $(MACROS)
 
 EXEC = lightspmv

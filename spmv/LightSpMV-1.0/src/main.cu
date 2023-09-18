@@ -82,7 +82,7 @@ int32_t main(int32_t argc, char* argv[]) {\
 	// 		<< " iterations)" << endl;
 
 	/*compute the GFLOPS*/
-	printf("opt._formula:%d\n",opt._formula);
+	// printf("opt._formula:%d\n",opt._formula);
 	gflops =
 			opt._formula == 0 ?
 					2 * opt._numValues - 1 :
