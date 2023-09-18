@@ -2,7 +2,7 @@
 NVCC = nvcc
 
 # Compiler flags
-CFLAGS = -Xcudafe --diag_suppress=2464 -Xcompiler -fopenmp
+CFLAGS = -Xcudafe --diag_suppress=2464 -Xcompiler -fopenmp -gencode=arch=compute_61,code=sm_61 -O3 -use_fast_math  \
 
 # Target executable
 TARGET = diaspmv 

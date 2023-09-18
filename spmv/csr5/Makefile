@@ -6,7 +6,7 @@ NUM_RUN = 1000
 #ENVIRONMENT_PARAMETERS
 #CUDA_PARAMETERS
 #NVCC_FLAGS = -O3  -w -m64 -arch=sm_30
-NVCC_FLAGS = -O3 -w -m64 -gencode=arch=compute_52,code=sm_52 -gencode=arch=compute_52,code=compute_52 #-ccbin /home/tujinxing/gcc-7.5.0/bin
+NVCC_FLAGS = -O3 -w -m64 -gencode=arch=compute_61,code=sm_61\  #-ccbin /home/tujinxing/gcc-7.5.0/bin
 # CUDA_INSTALL_PATH = /usr/local/cuda
 # CUDA_INCLUDES = -I$(CUDA_INSTALL_PATH)/include -I/usr/local/cuda/samples/common/inc
 CUDA_INSTALL_PATH = /home/tujinxing/cuda_10.1

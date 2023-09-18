@@ -568,8 +568,8 @@ void RunTest(
     DisplayPerf(device_giga_bandwidth, setup_ms, avg_ms, csr_matrix);
 
     // Initialize cuSparse
-    // cusparseHandle_t cusparse;
-    // AssertEquals(CUSPARSE_STATUS_SUCCESS, cusparseCreate(&cusparse));
+    cusparseHandle_t cusparse;
+    AssertEquals(CUSPARSE_STATUS_SUCCESS, cusparseCreate(&cusparse));
 
 	// cuSPARSE CsrMV
     // if (!g_quiet) printf("\n\n");
