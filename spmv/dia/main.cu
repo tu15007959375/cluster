@@ -762,7 +762,7 @@ void gpu_test_bdia(struct COOElement* coo_elements,int m,int ne,int timing_itera
             xtestcount=0;
         }
     }
-    printf("allmin:%d,allmax:%d\n",allmin,allmax);
+    // printf("allmin:%d,allmax:%d\n",allmin,allmax);
     //share memory
     int pertile_min_len=0;
     int pertile_max_len=0;
@@ -1090,6 +1090,8 @@ int main(int argc, char **argv)
     // printf("Use device:%d\n",dev);
     printf("nrows: %d\t",nrows);
     printf("maxdiff: %d\t",maxdiff);
+    printf("行列数: %d\t",m);
+    printf("对角线数: %d\t",dia_matrix->num_diagonals);
     printf("原始非零元个数:%d\n",ne);
     cudaSetDevice(dev);
     gpu_test_dia(dia_matrix,x,m,ne,timing_iterations,result_cpu);  
